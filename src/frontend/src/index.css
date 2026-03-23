@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/assets/fonts/PlusJakartaSans.woff2") format("woff2");
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.625rem;
+    /* App background: #F4F7FB light blue-gray */
+    --background: 0.968 0.008 232;
+    /* Card/surface: white */
+    --card: 1 0 0;
+    --card-foreground: 0.22 0.025 245;
+    --popover: 1 0 0;
+    --popover-foreground: 0.22 0.025 245;
+    /* Primary text: #1F2A37 */
+    --foreground: 0.22 0.025 245;
+    /* Primary action: teal #10B3A6 */
+    --primary: 0.68 0.11 188;
+    --primary-foreground: 1 0 0;
+    /* Secondary */
+    --secondary: 0.95 0.02 245;
+    --secondary-foreground: 0.22 0.025 245;
+    /* Muted text: #6B7280 */
+    --muted: 0.95 0.02 245;
+    --muted-foreground: 0.52 0.012 265;
+    /* Accent: pale blue #EAF2FF */
+    --accent: 0.95 0.02 245;
+    --accent-foreground: 0.52 0.19 258;
+    /* Destructive */
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    /* Border: #E6ECF2 */
+    --border: 0.92 0.012 230;
+    --input: 0.92 0.012 230;
+    --ring: 0.68 0.11 188;
+    /* Charts */
+    --chart-1: 0.68 0.11 188;
+    --chart-2: 0.72 0.19 152;
+    --chart-3: 0.52 0.19 258;
+    --chart-4: 0.646 0.222 41.116;
+    --chart-5: 0.769 0.188 70.08;
+    /* Sidebar */
+    --sidebar: 1 0 0;
+    --sidebar-foreground: 0.22 0.025 245;
+    --sidebar-primary: 0.52 0.19 258;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.95 0.02 245;
+    --sidebar-accent-foreground: 0.52 0.19 258;
+    --sidebar-border: 0.92 0.012 230;
+    --sidebar-ring: 0.68 0.11 188;
+    /* Custom brand colors */
+    --brand-teal: 0.68 0.11 188;
+    --brand-green: 0.72 0.19 152;
+    --brand-blue: 0.52 0.19 258;
+    --brand-blue-light: 0.95 0.02 245;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  }
+}
